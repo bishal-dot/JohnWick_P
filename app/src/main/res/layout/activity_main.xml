@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    >
+
+    <ImageView
+        android:id="@+id/coverimg"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:contentDescription="/coverimg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/johnw" />
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/coverimg"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/profile_border"
+        android:layout_centerHorizontal="true"
+        android:clipToOutline="true"
+        android:contentDescription="profileimg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/john" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nametext"
+        android:layout_below="@id/profileimg"
+        android:layout_centerHorizontal="true"
+        android:text="John Wick"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Alias: Baba Yaga"
+        android:textStyle="italic"
+        android:layout_below="@id/nametext"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/alias"
+        android:text="Master Asassasin"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kill Style: Headshots, Judo, Tactical Gunplay"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Specialist: Stealth, Precision, Improvisation"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="'He’s not the boogeyman... he’s the one you send to kill the boogeyman.'"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
